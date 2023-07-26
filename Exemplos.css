@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: 4px solid #424242;
+    border-right: 2px solid #424242;
+    border-left: 2px solid #424242;
+}
+
+.logo-imagem{
+    width: 74px;
+    height: 65px;
+    background-image: url(https://cdn.discordapp.com/attachments/1077258727977123990/1120711526848938097/LOGO-BLENDER.png);
+    border-radius: 25px;
+}
+
+.container-logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo-texto{
+    margin-left: 20px;
+    text-shadow: -2px -2px 0px rgb(255, 94, 0), 2px -2px 0px rgb(255, 94, 0), -2px 2px 0px rgb(255, 94, 0), 2px 2px 0px rgb(255, 94, 0);
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+}
+
+.logo-texto a{
+    text-decoration: none;
+}
+
+.logo-texto a:visited{
+    color: white;
+}
+
+.menu li{
+    display: inline-block;
+    margin: 0 25px;
+    border: solid transparent;
+    transition: 0.2s linear;
+    padding: 10px;
+}
+
+.menu li a{
+    font-size: 28px;
+    text-decoration: none;
+    color: #f59300;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    padding: 10px;
+}
+
+.menu li:hover{
+    transition: 0.2s linear;
+    background-color: rgb(245, 222, 207);
+    padding: 8px;
+    border-radius: 15px;
+    border: solid rgba(255, 255, 255, 0.726);
+    transform: translateY(-8px);
+}
+
+body{
+    margin: auto;
+    min-width: 600px;
+    max-width: 1280px;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+}
+
+.marzinho{
+    height: 10%;
+    width: 6400px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(150, 237, 255) 50%, rgba(48,220,255,1) 100%);
+    animation: wave 12s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite, swell 8s ease -1.25s infinite;;
+    transform: translate3d(0, 0, 0);
+    border-top: 10px solid #c4f6ff;
+}
+
+.marzinp2{
+    width: 6400px;
+    height: 50px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background: linear-gradient(90deg, rgb(150, 237, 255) 50%, rgba(48,220,255,1) 100%);
+  }
+
+@keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -1600px;
+    }
+  }
+  @keyframes swell {
+    0%,
+    100% {
+      transform: translate3d(0, -40px, 0);
+    }
+    50% {
+      transform: translate3d(0, 0px, 0);
+    }
+  }
+  .endWave{
+    display:none;
+  }

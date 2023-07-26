@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="Sobre.css">
+</head>
+<body>
+    <header>
+        <div class="container-logo">
+            <div class="logo-imagem"><img src="https://cdn.discordapp.com/attachments/1077258727977123990/1120711526848938097/LOGO-BLENDER.png" alt="" class="logo-imagem"></div>
+            <div class="logo-texto"></div>
+            <h1 class="logo-texto"><a href="Index.html" class="webi">Blender</a></h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="https://www.blender.org/download/"><span class="download"><i class="fa-solid fa-download"></i></span></a></li>
+                <li><a href="Sobre.html">Sobre</a></li>
+                <li><a href="Atalhos.html">Atalhos</a></li>
+                <li><a href="Exemplos.html">Exemplos</a></li>
+            </ul>
+        </div>
+    </header>
+    <script src="https://kit.fontawesome.com/be234f1ea9.js" crossorigin="anonymous"></script>
+    <div class="acordeao">
+        <div class="contentbx active">
+            <div class="label">Seu criador</div>
+            <div class="content">
+            <p>O criador do Software Blender nasceu em 13 de Outubro de 2002, Ton Roosendaal e sua equipe conseguiram liberar o programa para todo o mundo sobre a licença da GNU General Public License (GPL), e continua lançando atualizações constantemente para o software junto com sua equipe totalmente voluntária.</p>
+            </div>
+        </div>
+
+        <div class="contentbx active">
+            <div class="label">Sua data de lançamento e história</div>
+            <div class="content">
+            <p>Em 1988, Ton Roosendaal co-fundou o estúdio Holandês de animação NeoGeo. O estúdio NeoGeo rapidamente se tornou o maior estúdio de animação 3D na Holanda e uma das empresas de animação líderes na Europa. O estúdio NeoGeo criou produções ganhadoras de prêmios (Prêmio Europeu de Vídeos Corporativos de 1993 e 1995) para grandes clientes corporativos como a companhia multinacional de eletrônicos Philips. Dentro do estúdio NeoGeo, Ton era responsável por ambas as direções de arte e desenvolvimento interno de software. Após uma cuidadosa deliberação, Ton decidiu que a ferramenta de produção 3D criada internamente e configurada para o estúdio NeoGeo estava muito antiquada e complicada de se manter e atualizar e precisava ser re-escrita a partir do zero. Em 1995, esta re-escrita começou e foi destinada a se tornar o programa de criação 3D que todos nós conhecemos como Blender. Conforme a NeoGeo continuou a refinar e melhorar o Blender ficou aparente para Ton que o Blender poderia ser usado como uma ferramenta para outros artistas fora da NeoGeo.</p>
+            </div>
+        </div>
+        
+        <div class="contentbx active">
+            <div class="label">O que é e o que faz</div>
+            <div class="content">
+            <p>O Blender é uma espécie de editor 3-D. Nele nós criamos cenas, objetos, alteramos as propriedades desse objeto, como as cores, dimensões, rotação. Importamos uma série de arquivos externos, escrevemos textos em 3-D dentre outras inúmeras possibilidades. Ele serve como uma ferramenta de modelagem para propósitos gerais. Seja na criação de maquetes, ambientes internos, mascotes, humanóides e até objetos mecânicos.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const acordeao = document.getElementsByClassName
+        ('contentbx');
+
+        for (i = 0; i<acordeao.length; i++){
+            acordeao[i].addEventListener('click' , function(){
+                this.classList.toggle('active')
+            })
+        }
+    </script>
+    <div class="marzinho"></div>
+    <div class="marzinp2"></div>
+</body>
+</html>
